@@ -1,0 +1,69 @@
+.skills
+    padding-top: 120px
+    &__blok
+        padding-top: 60px
+        display: grid
+        grid-template-columns: repeat(4, minmax(270px, auto))
+        grid-template-rows: repeat(2, minmax(270px, auto))
+        column-gap: 13px
+        row-gap: 20px
+        &-info
+            border: 1px solid #000
+            &-descr
+                margin: 30px 30px 25px 30px
+        &-title
+            margin-top: 20px
+            
+        &-text 
+            margin-top: 15px
+            font-family: "Poppins"
+            font-size: 14px
+    &_querry
+        &-img
+            margin-top: 45px
+        &-title
+            margin-top: 33.38px
+        &-text
+            margin-top: 15px
+            font-family: "Poppins"
+            font-size: 14px
+    &__progress
+        padding-top: 115px
+        display: grid
+        grid-template-columns: repeat(3, 320px)
+        grid-template-rows: repeat(2, 70px)
+        column-gap: 50px
+        row-gap: 30px
+        &-title
+            position: relative
+            transform: translateX(10px)
+            @include before_circle
+            &::before
+                position: absolute
+                left: -11px
+        &-item
+            position: relative
+            &-num
+                position: absolute
+                right: 0
+                top: -1px
+                font-family: "Poppins"
+                font-size: 16px
+            &-line
+                height: 14px
+                width: 320px
+                border-radius: 4px
+                background: $second-color
+                margin-top: 27px
+.line
+    position: relative
+    &_full
+        position: absolute
+        background: $main-color
+        z-index: -1
+    &_empty
+        z-index: 10
+
+        
+        
+    
