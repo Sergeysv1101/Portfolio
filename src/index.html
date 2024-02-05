@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ang">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -106,6 +106,16 @@
         <div class="container">
             <div class="about__wrapper">
                 <div class="about__photo">
+                    <!-- <img srcset="img/photo.png 300w, 
+                                 img/photo.png 400w"
+                                 sizes="(max-width: 576px) 280px,
+                                        (min-width: 577px) 400px"
+                                 src="img/photo.png" alt="photo"> -->
+                    <!-- <picture>
+                        <source media="(max-width: 576px)">
+                        <source media="(min-width: 577px)">
+                        <img src="img/photo.png" alt="photo">
+                    </picture> -->
                     <img src="img/photo.png" alt="photo">
                 </div>
                 <div class="about__descr">
@@ -132,8 +142,8 @@
                             <div class="title title_fz16">Design</div>
                             <div class="about__skills-text">Making a design to suit every taste for your website</div>
                         </div>
-                    </div>
-                    <!-- <div class="about__skills-item">
+                    <!-- </div>
+                         <div class="about__skills-item">
                     </div> -->
                 </div>
             </div>
@@ -146,7 +156,7 @@
             <div class="divider"></div>
             <div class="resume__wrapper">
                 <div class="resume__column">
-                    <h3 class="title title_fz_20 resume__column-title">Education</h3>
+                    <h3 class="title title_fz30 resume__column-title">Education</h3>
                     <ul>
                         <li>
                             <div class="resume__item">
@@ -176,7 +186,7 @@
                 </div>
                 <div class="resume__column">
                     <div class="resume__column">
-                        <h3 class="title title_fz_20 resume__column-title">My works</h3>
+                        <h3 class="title title_fz30 resume__column-title">My works</h3>
                         <ul>
                             <li>
                                 <div class="resume__item">
@@ -353,6 +363,54 @@
                     <div class="price__title title title_fz16">Design</div>
                     <div class="price__cost title title_fz16">Individually</div>
                     <div class="price__text text">I will create a design for your website/application...</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contacts">
+        <div class="container">
+            <div class="contacts__wrapper">
+                <div class="contacts__photo">
+                    <img src="img/photo.png" alt="photo">
+                </div>
+                <div class="contacts__descr">
+                    <h2 class="title title_fz16 about__title">Contacts</h2>
+                    <div class="title title_fz36 about__subtitle">Contact with me</div>
+                    <div class="divider"></div>
+                    <div class="title title_fz14 contacts__text">In any way convenient for you:</div>
+                    <div class="contacts__social">
+                        <a href="#" class="contacts__link">
+                            <img src="icons/social/contacts/facebook.svg" alt="facebook">
+                        </a>
+                        <a href="#" class="contacts__link">
+                            <img src="icons/social/contacts/telegram.svg" alt="telegram">
+                        </a>
+                        <a href="#" class="contacts__link">
+                            <img src="icons/social/contacts/instagram.svg" alt="instagram">
+                        </a>
+                        <div class="title title_fz14 contacts__text">Or leave your details and I will write to you:</div>
+                        <form action="#" class="contacts__form">
+                            <div class="contacts__input">
+                                <input required name="name" id="name" type="text">
+                                <label for="name">Your name</label>
+                            </div>
+                            <div class="contacts__input">
+                                <input required name="email" id="email" type="email">
+                                <label for="email">Your email</label>
+                            </div>
+                            <div class="contacts__textarea">
+                                <textarea name="text" id="text"></textarea>
+                                <label for="text">Your massage</label>
+                            </div>
+                            <div class="contacts__triggers">
+                                <button class="contacts__btn btn__contacts">Send massage</button>
+                                <div class="contacts__policy">
+                                    <input required type="checkbox">
+                                    <span>I agree with the <a href="../src/policy.html">privacy policy</a></span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
